@@ -9,4 +9,285 @@ h1, h2 {
   font-size: 35px;
   color:#ffffff;
   font-family: "Roboto Regular", Verdana, sans-serif;
+  background: #c5cec9;
+
+  /* Только для оформления сетки*/
+  min-height: 40px
+}
+
+/* Оформление главной страницы*/
+
+body {
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.page-wrapper {
+  width: 100%;
+  background: #f1d1b0;
+}
+
+.container {
+  width: 95.4%;
+  margin: 0 auto;
+  background: #cbdad1;
+}
+
+.main-header {
+  background: #87a193;
+  font-size: 14px;
+}
+
+.main-header img {
+  width: 160px;
+  float:left;
+  background: #d7e8de;
+  margin-right: 2.32%;
+
+     /* Только для оформления сетки*/
+  min-height: 75px
+}
+
+.main-navigation {
+  float: left;
+  width: 48.84%;
+  background: #d7e8de;
+
+    /* Только для оформления сетки */
+  min-height: 75px;
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user-block {
+  float: right;
+  width: 280px;
+  background: #d7e8de;
+
+    /* Только для оформления сетки */
+  min-height: 75px;
+}
+
+.slide-1 {
+  margin-bottom: 40px;
+}
+
+.index-heading {
+  width: 700px;
+  min-height: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 320px;
+  margin-bottom: 30px;
+  background: #87a193;
+}
+
+.index-button {
+  margin-right: auto;
+  margin-left: auto;
+  background: #87a193;
+
+    /* Только для оформления сетки */
+  min-height: 65px;
+}
+
+
+.promo-block-left {
+  float:left;
+  width: 48.84%;
+  margin-right: 2.32%;
+  background: #87a193;
+
+  /* Только для оформления сетки */
+  min-height: 230px;
+}
+
+.promo-block-right {
+  float:left;
+  width: 48.84%;
+  background: #87a193;
+
+    /* Только для оформления сетки */
+  min-height: 230px;
+}
+
+.slide-wrapper {
+  margin-bottom: 35px;
+}
+
+.index-catalog {
+  width: 100%;
+  background: #87a193;
+  margin-bottom: 10px;
+  font-size: 0px;
+}
+
+.catalog-item {
+  width: 23.26%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2.32%;
+  background: #d7e8de;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+    /* Только для оформления сетки */
+  min-height: 285px;/* 340 - для макета на 1200*/
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.index-about {
+  width: 100%;
+  background: #87a193;
+  margin-bottom: 40px;
+
+/* Только для оформления сетки */
+  min-height: 310px; /* 375 - для макета на 900*/
+}
+
+.index-content-left {
+  float:left;
+  width: 48.84%;
+  background: #87a193;
+  margin-right: 2.32%;
+ /* Только для оформления сетки */
+  min-height: 220px;
+}
+
+.index-content-right {
+  float:left;
+  width:48.84%;
+  background: #87a193;
+
+ /* Только для оформления сетки */
+  min-height: 220px;
+}
+
+.index-map {
+  width: 100%;
+  background: #d2dbd6;
+  margin: 0 auto;
+
+/* Только для оформления сетки */
+  min-height: 430px;
+
+}
+
+.index-contacts {
+  float:right;
+  width: 300px;
+  margin-top: 65px;
+  margin-bottom: 40px;
+  /* Только для оформления сетки */
+  min-height: 305px;
+  background: #6a9090;
+
+}
+
+.main-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #87a193;
+  /* Только для оформления сетки */
+  min-height: 100px;
+}
+
+
+.footer-social {
+  float: left;
+  width: 23.26%;
+  margin-right: 2.32%;
+  background: #6a9090;
+
+  /* Только для оформления сетки */
+  min-height: 60px;
+}
+
+.footer-information {
+  float: left;
+  width: 48.84%;
+  background: #6a9090;
+
+  /* Только для оформления сетки */
+  min-height: 60px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 23.26%;
+  background: #6a9090;
+
+  /* Только для оформления сетки */
+  min-height: 70px;
+}
+
+.main-navigation ul ul {
+  display: none;
+}
+
+.basket {
+  display: none;
+}
+
+.user-block form {
+  display: none;
+}
+
+.header-contacts {
+  display: none;
+}
+
+.slide-2 {
+  display: none;
+}
+
+.slide-3 {
+  display: none;
+}
+
+/* Оформление gllacy-catalog*/
+
+.breadcrumbs {
+  background: #c5cec9;
+  margin-bottom: 10px;
+
+  /* Только для оформления сетки */
+  min-height: 16px;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+}
+
+.catalog {
+  width: 100%;
+  font-size: 0px;
+  background: #87a193;
+  margin-bottom: 50px;
+}
+
+.catalog-filter {
+  background: #c5cec9;
+  margin-bottom: 30px;
+}
+
+.paginator {
+  background: #c5cec9;
+  margin-bottom: 40px;
+
+  /* Только для оформления сетки */
+  min-height: 20px;
 }
