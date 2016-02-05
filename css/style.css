@@ -2,6 +2,7 @@ body {
   font-size: 16px;
   font-family: "Roboto Regular", Verdana, sans-serif;
   line-height: 22px;
+  min-width: 900px;
 }
 
 h1, h2 {
@@ -17,12 +18,6 @@ h1, h2 {
 
 /* Оформление главной страницы*/
 
-body {
-  min-width: 900px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .clearfix::after {
   content: "";
   display: table;
@@ -30,7 +25,8 @@ body {
 }
 
 .page-wrapper {
-  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   background: #f1d1b0;
 }
 
@@ -78,7 +74,10 @@ body {
   min-height: 75px;
 }
 
-.slide-1 {
+.slide-1,
+.slide-2,
+.slide-3 {
+  text-align: center;
   margin-bottom: 40px;
 }
 
@@ -93,19 +92,13 @@ body {
 }
 
 .index-button {
-  margin-right: auto;
-  margin-left: auto;
   background: #87a193;
-
-    /* Только для оформления сетки */
-  min-height: 65px;
 }
 
 
 .promo-block-left {
   float:left;
   width: 48.84%;
-  margin-right: 2.32%;
   background: #87a193;
 
   /* Только для оформления сетки */
@@ -113,7 +106,7 @@ body {
 }
 
 .promo-block-right {
-  float:left;
+  float: right;
   width: 48.84%;
   background: #87a193;
 
@@ -126,7 +119,6 @@ body {
 }
 
 .index-catalog {
-  width: 100%;
   background: #87a193;
   margin-bottom: 10px;
   font-size: 0px;
@@ -140,6 +132,7 @@ body {
   background: #d7e8de;
   font-size: 14px;
   margin-bottom: 20px;
+  text-align: center;
 
     /* Только для оформления сетки */
   min-height: 285px;/* 340 - для макета на 1200*/
@@ -149,8 +142,12 @@ body {
   margin-right: 0px;
 }
 
-.index-about {
+.catalog-item img {
   width: 100%;
+  height: 100%;
+}
+
+.index-about {
   background: #87a193;
   margin-bottom: 40px;
 
@@ -158,17 +155,31 @@ body {
   min-height: 310px; /* 375 - для макета на 900*/
 }
 
+
+.index-about-left {
+  float:left;
+  width: 48.84%;
+}
+
+.index-about-right {
+  float:right;
+  width:48.84%;
+}
+
+.index-content {
+  margin-bottom: 40px;
+}
+
 .index-content-left {
   float:left;
   width: 48.84%;
   background: #87a193;
-  margin-right: 2.32%;
  /* Только для оформления сетки */
   min-height: 220px;
 }
 
 .index-content-right {
-  float:left;
+  float:right;
   width:48.84%;
   background: #87a193;
 
@@ -177,9 +188,7 @@ body {
 }
 
 .index-map {
-  width: 100%;
   background: #d2dbd6;
-  margin: 0 auto;
 
 /* Только для оформления сетки */
   min-height: 430px;
@@ -187,10 +196,7 @@ body {
 }
 
 .index-contacts {
-  float:right;
   width: 300px;
-  margin-top: 65px;
-  margin-bottom: 40px;
   /* Только для оформления сетки */
   min-height: 305px;
   background: #6a9090;
@@ -273,7 +279,6 @@ body {
 }
 
 .catalog {
-  width: 100%;
   font-size: 0px;
   background: #87a193;
   margin-bottom: 50px;
