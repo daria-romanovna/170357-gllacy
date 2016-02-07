@@ -25,8 +25,14 @@ h1, h2 {
 }
 
 .page-wrapper {
+  background: #cbdad1;
+  min-width: 900px;
+}
+
+.page-container {
   max-width: 1200px;
-  margin: auto;
+  min-width: 900px;
+  margin:0 auto;
   background: #f1d1b0;
 }
 
@@ -144,7 +150,7 @@ h1, h2 {
 
 .catalog-item img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .index-about {
@@ -188,7 +194,7 @@ h1, h2 {
 }
 
 .index-map {
-  background: #d2dbd6;
+  background: #addbe7;
 
 /* Только для оформления сетки */
   min-height: 430px;
@@ -214,17 +220,7 @@ h1, h2 {
 
 .footer-social {
   float: left;
-  width: 23.26%;
-  margin-right: 2.32%;
-  background: #6a9090;
-
-  /* Только для оформления сетки */
-  min-height: 60px;
-}
-
-.footer-information {
-  float: left;
-  width: 48.84%;
+  width: 200px;
   background: #6a9090;
 
   /* Только для оформления сетки */
@@ -233,11 +229,20 @@ h1, h2 {
 
 .footer-copyright {
   float: right;
-  width: 23.26%;
+  width: 200px;
   background: #6a9090;
 
   /* Только для оформления сетки */
   min-height: 70px;
+}
+
+.footer-information {
+  width: 340px;
+  margin:0 auto;
+  background: #6a9090;
+
+  /* Только для оформления сетки */
+  min-height: 60px;
 }
 
 .main-navigation ul ul {
