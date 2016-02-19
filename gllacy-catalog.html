@@ -36,14 +36,23 @@
             <div class="search-block-container">
               <a href= "#" class="btn-header btn-search">Поиск</a>
               <form action="https://echo.htmlacademy.ru" method="post" name="search-form" class="search-block">
-                <input type="text" name="Search" value="" placeholder="Что ищем?">
+                <div class="userblock-wrap">
+                  <input type="text" name="Search" value="" id="search">
+                  <label for="search">Что ищем?</label>
+                </div>
               </form>
             </div>
             <div class="login-block-container">
-            <a href="#" class="btn-header btn-login">Вход</a>
+              <a href="#" class="btn-header btn-login">Вход</a>
               <form action="https://echo.htmlacademy.ru" method="post" name="entrance-form" class="login-block">
-                <input type="email" name="email" placeholder="Электронная почта">
-                <input type="password" name="password" placeholder="Пароль">
+                <div class="userblock-wrap">
+                  <input type="email" name="email" id="email">
+                  <label for="email">Электронная почта</label>
+                </div>
+                <div class="userblock-wrap">
+                  <input type="password" name="password" id="password">
+                  <label for="password">Пароль</label>
+                </div>
                 <button class="button" type="submit">Войти</button>
                 <a href="" class="login-links">Забыли пароль?</a>
                 <a href="" class="login-links">Новая регистрация</a>
@@ -53,27 +62,26 @@
               <a href="#" class="btn-header btn-basket">Пусто</a>
               <div class="basket">
                 <div class="basket-block">
-                  <div class="basket-item">Х</div>
+                  <button class="basket-item">Х</button>
                   <img src="img/img-catalog-1-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом" class="basket-image">
                   <div class="basket-name"> Пломбир с апельсиновым джемом </div>
                   <div class="basket-quantity"> 1,5 кг <span>х 200 р.</span></div>
                   <div class="basket-price"> 300 р.</div>
                 </div>
                 <div class="basket-block">
-                  <div class="basket-item">Х</div>
+                  <button class="basket-item">Х</button>
                   <img src="img/img-catalog-1-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада" class="basket-image">
                   <div class="basket-name"> Клубничный пломбир с присыпкой из белого шоколада </div>
                   <div class="basket-quantity"> 1,5 кг <span>х 300 р.</span></div>
                   <div class="basket-price"> 4500 р.</div>
                 </div>
                 <div class="total"> Итого: 750 руб. </div>
-                 <a href="#" class="button">Оформить заказ</a>
-                </div>
+                <a href="#" class="button">Оформить заказ</a>
               </div>
-              <div class="header-contacts">
-                <span>С 10 до 20, ежедневно</span><br>
-                <span class="header-phone">8 812 450-25-25</span>
-              </div>
+            </div>
+            <div class="header-contacts">
+              <span>С 10 до 20, ежедневно</span><br>
+              <span class="header-phone">8 812 450-25-25</span>
             </div>
           </div>
         </header>

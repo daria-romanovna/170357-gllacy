@@ -209,12 +209,12 @@ body > input[type="radio"] {
   background: url("../img/icon-header-search.svg") center no-repeat;
 }
 
-.btn-search:hover {
+.search-block-container:hover .btn-search{
   background: #ffffff;
   color: #000000;
 }
 
-.btn-search:hover::before {
+.search-block-container:hover  .btn-search::before {
   background: url("../img/icon-header-search-b.svg") center no-repeat;
 }
 
@@ -237,12 +237,12 @@ body > input[type="radio"] {
   background: url("../img/icon-header-basket.svg") center no-repeat;
 }
 
-.btn-basket:hover {
+.basket-container:hover .btn-basket {
   background: #ffffff;
   color: #000000;
 }
 
-.btn-basket:hover::before {
+.basket-container:hover .btn-basket::before {
   background: url("../img/icon-header-basket-b.svg") center no-repeat;
 }
 
@@ -265,12 +265,12 @@ body > input[type="radio"] {
   background: url("../img/icon-header-entrance.svg") center no-repeat;
 }
 
-.btn-login:hover {
+.login-block-container:hover .btn-login {
   background: #ffffff;
   color: #000000;
 }
 
-.btn-login:hover::before {
+.login-block-container:hover .btn-login::before {
   background: url("../img/icon-header-entrance-b.svg") center no-repeat;
 }
 
@@ -306,9 +306,12 @@ body > input[type="radio"] {
   border-radius: 0;
  }
 
-.sub-menu li:first-child a,
+.sub-menu li:first-child a {
+  border-radius: 5px 5px 0 0;
+}
+
 .sub-menu li:last-child a {
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .sub-menu a::after {
@@ -371,7 +374,7 @@ a.active-sub-menu {
   top: 40px;
   right: 230px;
 
-  width: 340px;
+  width: 310px;
   padding: 15px;
 
   font-size: 14px;
@@ -383,21 +386,18 @@ a.active-sub-menu {
 
 .search-block input  {
   padding: 10px 15px;
+
   box-sizing: border-box;
-  width: 100%;
+  width: 310px;
+  height: 40px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #353535;
+  font-weight: 700;
 
   border: 1px solid #d3d3d2;
   border-radius: 5px;
-}
-
-.user-block  input:hover {
-  border: 2px solid #c7c6c5;
-  color: #c7c6c5;
-}
-
-.user-block  input:focus {
-  border: 2px solid #8fbdec;
-  outline: none;
 }
 
 .login-block-container:hover .login-block {
@@ -410,7 +410,7 @@ a.active-sub-menu {
   top: 40px;
   right: 120px;
 
-  width: 270px;
+  width: 240px;
   padding: 15px;
   z-index: 5;
 
@@ -423,8 +423,16 @@ a.active-sub-menu {
 
 .login-block input  {
   padding: 10px 15px;
-  width: 240px;
   margin-bottom: 15px;
+
+  box-sizing: border-box;
+  width: 240px;
+  height: 40px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #353535;
+  font-weight: 700;
 
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -451,10 +459,49 @@ a.active-sub-menu {
   line-height: 24px;
 }
 
+.userblock-wrap {
+  position:relative;
+}
+
+.userblock-wrap label {
+  position: absolute;
+  left: 15px;
+  top: 9px;
+
+  color: #656565;
+  font-size:14px;
+  line-height: 24px;
+  font-weight:400;
+
+  pointer-events:none;
+
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+  transition:0.2s ease all;
+}
+
+.userblock-wrap input[type="text"]:focus ~ label,
+.userblock-wrap input[type="email"]:focus ~ label,
+.userblock-wrap input[type="password"]:focus ~ label {
+  top:-15px;
+
+  font-size: 11px;
+  line-height: 13px;
+  color: #8fbdec;
+}
+
+.userblock-wrap input:hover {
+  border: 2px solid #c7c6c5;
+}
+
+.userblock-wrap  input:focus {
+  border: 2px solid #8fbdec;
+  outline: none;
+}
+
 .basket-container:hover .basket {
   display: block;
 }
-
 
 .basket {
   display: none;
@@ -515,6 +562,8 @@ a.active-sub-menu {
   margin-top: 10px;
 
   font-size: 0;
+  border: none;
+  background: #f8f7f4;
 }
 
 .basket-item::after,
@@ -536,18 +585,6 @@ a.active-sub-menu {
 
 .basket-item::before {
   transform: rotate(-45deg);
-}
-
-.basket-item::after {
-  content: "";
-  position: absolute;
-
-}
-
-.basket-item::before {
-  content: "";
-  position: absolute;
-
 }
 
 img.basket-image{
@@ -901,8 +938,6 @@ img.basket-image{
   font-size: 45px;
   line-height: 54px;
   text-align: center;
-
-  cursor: pointer;
 }
 
 .rouble {
@@ -930,16 +965,24 @@ img.basket-image{
   border-radius: 15px;
 }
 
+.index-about-raw {
+  display: table;
+}
+
+.index-about-raw:last-child {
+  margin-bottom: 25px;
+}
+
 .index-about-left {
   float:left;
   width: 40%;
 
   padding-left: 75px;
-  margin-bottom: 10px;
 }
 
 .index-about p {
   position: relative;
+  margin-bottom: 5px;
 }
 
 .item::before {
@@ -972,7 +1015,6 @@ img.basket-image{
 
   padding-left: 70px;
   padding-right: 20px;
-  margin-bottom: 10px;
 }
 
 .index-about h3 {
@@ -1088,9 +1130,9 @@ img.basket-image{
 
   font-family: "Roboto", Verdana, sans-serif;
   font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  color: #5a5a5a;
+  line-height: 24px;
+  color: #353535;
+  font-weight: 700;
 
   border-radius: 5px;
   border: 1px solid #d3d3d2;
@@ -1109,7 +1151,6 @@ img.basket-image{
 
 .index-content-right  input:hover {
   border: 2px solid #c7c6c5;
-  color: #c7c6c5;
 }
 
 .index-content-right  input:focus {
@@ -1363,7 +1404,7 @@ img.basket-image{
 
 .main-content h1 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
   font-size: 35px;
   line-height: 45px;
@@ -1389,7 +1430,6 @@ img.basket-image{
 
   text-align: right;
 }
-
 
 .paginator a {
   display: inline-block;
@@ -1496,19 +1536,21 @@ img.basket-image{
 
 .select-wrap {
   display: inline-block;
+  vertical-align: top;
+
   position: relative;
 
   width: 195px;
   margin-right: 15px;
-  overflow: hidden;
-  padding-top: 10px;
+  /*overflow: hidden;*/
+  padding-bottom: 20px;
 
   border-radius: 20px;
 }
 
 .select-wrap::after {
   position: absolute;
-  top: 0;
+  top: -30px;
   right: 20px;
 
   content: '';
@@ -1521,7 +1563,7 @@ img.basket-image{
 
 .select-wrap label {
   position: absolute;
-  top: 5px;
+  top: -27px;
   left: 20px;
 
   font-size: 15px;
@@ -1529,6 +1571,9 @@ img.basket-image{
 }
 
 .custom-select {
+  position: absolute;
+  top:0;
+
   box-sizing: border-box;
   width: 195px;
   height: 38px;
@@ -1544,16 +1589,26 @@ img.basket-image{
   color: #ffffff;
 
   text-overflow: '';
-  -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
 }
 
 .custom-select--wide {
   width: 195px;
 }
+
+.custom-select:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
 .custom-select:focus {
   outline: none;
+}
+
+.select-wrap:hover::after {
+  border-top: 5px solid #000000;
 }
 
 .filter-fatcontent,
@@ -1562,6 +1617,8 @@ img.basket-image{
   position: relative;
 
   display: inline-block;
+  vertical-align: top;
+
   padding: 0;
   margin-bottom: 35px;
   margin-right: 15px;
@@ -1585,6 +1642,10 @@ img.basket-image{
 
 .range-controls {
   position: relative;
+}
+
+.filter-price:hover {
+  cursor: pointer;
 }
 
 .range-controls .scale {
@@ -1645,6 +1706,7 @@ img.basket-image{
 
 .filter-fatcontent input[type="radio"] + label {
   display: inline-block;
+  vertical-align: top;
   padding-left: 30px;
 
   position: relative;
@@ -1664,8 +1726,9 @@ img.basket-image{
   content: "";
   display: block;
 
-  width: 20px;
-  height: 20px;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
 
   border-radius: 50%;
   border: 1px solid #ffffff;
@@ -1715,8 +1778,9 @@ img.basket-image{
   content: "";
   display: block;
 
-  width: 20px;
-  height: 20px;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
 
   border-radius: 5px;
   border: 1px solid #ffffff;
@@ -1727,34 +1791,18 @@ img.basket-image{
   border: 2px solid #ffffff;
 }
 
-/*
 .filter-filler input[type="checkbox"]:checked + label::after {
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
-  left: 7px;
+  top: 4px;
+  left: 4px;
 
-  width: 5px;
-  height: 3px;
+  width: 15px;
+  height: 13px;
 
-  background: #ffffff;
-  transform: rotate(45deg);
+  background: url("../img/bg-checked.png");
 }
-
-.filter-filler input[type="checkbox"]:checked + label::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 9px;
-  left: 9px;
-
-  width: 11px;
-  height: 1px;
-
-  background: #ffffff;
-  transform: rotate(-45deg);
-}/* Галочка не внутри блока и ховер странно работает()*/
 
 .filter-button {
   display: inline-block;
@@ -1777,6 +1825,16 @@ img.basket-image{
   border-radius: 20px;
 }
 
+.filter-button:hover {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+ }
+
+.filter-button:active {
+  box-shadow: inset 0 2px 1px #696969;
+}
+
 /* Modals */
 
 .modal-content {
@@ -1787,10 +1845,10 @@ img.basket-image{
   left: 50%;
   z-index: 15;
 
+  box-sizing: border-box;
   width: 480px;
-  height: 446px;
 
-  margin-top: -223px;
+  margin-top: -225px;
   margin-left: -240px;
   padding: 15px 25px;
 
@@ -1847,7 +1905,7 @@ img.basket-image{
 
   width: 19px;
   height: 2px;
-  background-color: #656565;
+  background-color: #000000;
   border-radius: 1px;
 }
 
@@ -1859,6 +1917,11 @@ img.basket-image{
   transform: rotate(-45deg);
 }
 
+.modal-content-close:hover::before,
+.modal-content-close:hover::after {
+  background: #e95038;
+}
+
 .modal-content h2 {
   margin: 0;
   margin-bottom: 20px;
@@ -1866,15 +1929,18 @@ img.basket-image{
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
+  color: #343434;
 }
-
 
 .modal-form input[type="text"],
 .modal-form input[type="email"] {
   display: block;
-  width: 270px;
   margin: 0;
   padding: 10px 20px;
+
+  width: 266px;
+  height: 44px;
+  box-sizing: border-box;
 
   font-size: 16px;
   line-height: 24px;
@@ -1890,14 +1956,15 @@ img.basket-image{
 
 .input-wrap {
   position:relative;
-  margin-bottom: 20px;
-  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
-.input-wrap label {
+.input-wrap label,
+.textarea-wrap label {
   position: absolute;
   left: 15px;
-  top: 11px;
+  top: 10px;
 
   color: #656565;
   font-size:14px;
@@ -1906,47 +1973,65 @@ img.basket-image{
 
   pointer-events:none;
 
-  transition:0.2s ease all;
   -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
+  transition:0.2s ease all;
 }
 
-.modal-form  input:hover {
+.modal-form  input:hover,
+.textarea-wrap textarea:hover {
   border: 2px solid #c7c6c5;
 }
 
-.modal-form  input:focus {
+.modal-form  input:focus,
+.textarea-wrap textarea:focus {
   border: 2px solid #8fbdec;
   outline: none;
 }
 
 .input-wrap input[type="text"]:focus ~ label,
-.input-wrap input[type="email"]:focus ~ label {
-  top:-25px;
+.input-wrap input[type="email"]:focus ~ label,
+.textarea-wrap textarea:focus ~ label {
+  top:-18px;
+
+  font-size: 11px;
+  line-height: 13px;
   color: #8fbdec;
 }
 
 .input-wrap input[type="text"]:valid ~ label,
-.input-wrap input[type="email"]:valid ~ label {
-  top:-25px;
+.input-wrap input[type="email"]:valid ~ label,
+.textarea-wrap textarea:focus ~ label {
+  top:-18px;
+
+  font-size: 11px;
+  line-height: 13px;
   color: #8fbdec;
 }
 
 textarea {
   display: block;
-  width: 430px;
+
   margin: 0;
   padding: 10px 15px;
   margin-bottom: 80px;
 
-  font-size: 14px;
+  width: 430px;
+  height: 156px;
+  box-sizing: border-box;
+
+  font-size: 16px;
   line-height: 24px;
-  color: red;
+  color: #656565;
   font-weight: 400;
 
-  background-color: #656565;
   border: 1px solid #d3d3d2;
   outline: none;
 
   border-radius: 5px;
+}
+
+.textarea-wrap {
+  position:relative;
+  margin-top: 25px;
 }
