@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,900&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,900&amp;subset=latin,cyrillic" rel="stylesheet">
   </head>
   <body >
     <div class="page-container">
@@ -37,7 +37,7 @@
               <a href= "#" class="btn-header btn-search">Поиск</a>
               <form action="https://echo.htmlacademy.ru" method="post" name="search-form" class="search-block">
                 <div class="userblock-wrap">
-                  <input type="text" name="Search" value="" id="search">
+                  <input type="text" name="Search" value="" id="search" required>
                   <label for="search">Что ищем?</label>
                 </div>
               </form>
@@ -46,11 +46,11 @@
               <a href="#" class="btn-header btn-login">Вход</a>
               <form action="https://echo.htmlacademy.ru" method="post" name="entrance-form" class="login-block">
                 <div class="userblock-wrap">
-                  <input type="email" name="email" id="email">
+                  <input type="text" name="email" id="email" required>
                   <label for="email">Электронная почта</label>
                 </div>
                 <div class="userblock-wrap">
-                  <input type="password" name="password" id="password">
+                  <input type="password" name="password" id="password" required>
                   <label for="password">Пароль</label>
                 </div>
                 <button class="button" type="submit">Войти</button>
@@ -104,6 +104,8 @@
                 <label for="sortSelect"> Сортировка:</label><br>
                 <select class="custom-select  custom-select--wide" name="lol" id="sortSelect">
                   <option> по популярности</option>
+                  <option> по цене</option>
+                  <option> по жирности</option>
                 </select>
               </div>
               <div class="filter-price">
