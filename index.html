@@ -38,7 +38,7 @@
             </nav>
             <div class="user-block">
               <div class="search-block-container">
-                <a href= "#" class="btn-header btn-search">Поиск</a>
+                <a href= "#" class="btn-header btn-search">&nbsp;</a>
                 <form action="https://echo.htmlacademy.ru" method="post" name="search-form" class="search-block">
                   <div class="userblock-wrap">
                     <input type="text" name="Search" value="" id="search" required>
@@ -50,7 +50,7 @@
                 <a href="#" class="btn-header btn-login">Вход</a>
                 <form action="https://echo.htmlacademy.ru" method="post" name="entrance-form" class="login-block">
                   <div class="userblock-wrap">
-                    <input type="text" name="email" id="email" required>
+                    <input type="text" name="email-login" id="email" required>
                     <label for="email">Электронная почта</label>
                   </div>
                   <div class="userblock-wrap">
@@ -186,7 +186,7 @@
                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                   <form action="https://echo.htmlacademy.ru" method="post" >
                     <div class="userblock-wrap">
-                      <input type="text" name="email" value="" id="email-form" required>
+                      <input type="text" name="email-subscribe" value="" id="email-form" required>
                       <label for="email-form">Электронная почта</label>
                     </div>
                     <button class="button submit" type="submit">Отправить</button>
@@ -198,24 +198,26 @@
         </div>
       </div>
       <div class="index-map">
-        <div class="page-container">
-          <div class="container">
-            <div class="index-contacts">
-              <p>
-                Адрес главного офиса и офлайн магазина:
-                <span class="contact-details">
-                ул. Больная Конюшенная <br>
-                19/8, Санкт-Петербург
-                </span>
-              </p>
-              <p>
-                Для заказов по телефону:
-                <span class="contact-details">
-                8 812 450-25-25
-                </span>
-                (с 10 до 20 ежедневно)
-              </p>
-              <a href="#" class="button">Форма обратной связи</a>
+        <div id="yandex-map">
+          <div class="page-container">
+            <div class="container">
+              <div class="index-contacts">
+                <p>
+                  Адрес главного офиса и офлайн магазина:
+                  <span class="contact-details">
+                  ул. Больная Конюшенная <br>
+                  19/8, Санкт-Петербург
+                  </span>
+                </p>
+                <p>
+                  Для заказов по телефону:
+                  <span class="contact-details">
+                  8 812 450-25-25
+                  </span>
+                  (с 10 до 20 ежедневно)
+                </p>
+                <a href="#" class="button feedback" >Форма обратной связи</a>
+              </div>
             </div>
           </div>
         </div>
@@ -249,7 +251,7 @@
             <h2 class="modal-content-title">Мы вам обязательно ответим!</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="input-wrap">
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="firstname" id="name" required>
                 <label for="name">Как вас зовут?</label>
               </div>
               <div class="input-wrap">
@@ -268,5 +270,7 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=s76WXmKc3I5HnPN7UB4iNgp98mCbJroy&amp;width=100%&amp;height=430&amp;id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor"></script>
   </body>
 </html>
