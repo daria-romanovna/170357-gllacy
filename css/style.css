@@ -655,7 +655,7 @@ img.basket-image{
 .slide-wrapper {
   position:  relative;
 
-  margin-bottom: 45px;
+  margin-bottom: 42px;
   margin-top: 319px;
 }
 
@@ -680,6 +680,7 @@ img.basket-image{
 
 .button {
   display: inline-block;
+  vertical-align: top;
   padding: 10px 22px;
 
   text-decoration: none;
@@ -816,9 +817,7 @@ img.basket-image{
 
 .promo-block-left h2,
 .promo-block-right h2 {
-  margin: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 11px 20px;
 
   font-size: 35px;
   line-height: 42px;
@@ -833,15 +832,17 @@ img.basket-image{
   padding-bottom: 65px;
 
   font-size: 18px;
-  line-height: 22px;
+  line-height: 24px;
   font-weight: 700;
   color: #ffffff;
 }
 
 .btn-promo {
   position: absolute;
-  bottom: 25px;
+  bottom: 26px;
   right: 20px;
+
+  padding: 12px 22px;
 }
 
 /*Catalog*/
@@ -868,7 +869,7 @@ img.basket-image{
 
   width: 23.26%;
   margin-right: 2.32%;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   z-index: 4;
 
   font-size: 0;
@@ -1037,7 +1038,7 @@ img.basket-image{
 
 .index-about h3 {
   margin-left: 20px;
-  margin-bottom: 0;
+  margin-bottom: 3px;
   margin-top: 0px;
   padding-top: 23px;
 
@@ -1047,7 +1048,7 @@ img.basket-image{
 }
 
 .index-content {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .index-content-left {
@@ -1075,15 +1076,12 @@ img.basket-image{
 }
 
 .news-preview {
-  position: absolute;
-  top: 50px;
-  left: 20px;
-
+  padding-left: 20px;
+  padding-bottom: 10px;
   width: 300px;
 }
 
 .index-content-left .links {
-
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -1208,8 +1206,8 @@ img.basket-image{
 .index-contacts p {
   margin-right: 20px;
   margin-left: 25px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 26px;
+  margin-bottom: 26px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1219,6 +1217,7 @@ img.basket-image{
 
 .contact-details {
   display: inline-block;
+  vertical-align: top;
   width: 250px;
 
   font-size: 18px;
@@ -1331,7 +1330,7 @@ img.basket-image{
 }
 
 .footer-information {
-  width: 350px;
+  width: 360px;
   margin:0 auto;
 
   padding-top: 35px;
@@ -1344,12 +1343,13 @@ img.basket-image{
 
 .information-left {
   float: left;
-  padding-left: 40px;
+  padding-left: 30px;
   width: 120px;
 }
 
 .information-right {
   float: right;
+  padding-right: 20px;
   width: 170px;
 }
 
@@ -1469,6 +1469,7 @@ img.basket-image{
 
 .paginator a {
   display: inline-block;
+  vertical-align: top;
   padding: 4px 10px;
 
   font-weight: 500;
@@ -1803,6 +1804,7 @@ img.basket-image{
 
 .filter-filler  input[type="checkbox"] + label {
   display: inline-block;
+  vertical-align: top;
   padding-left: 30px;
 
   position: relative;
